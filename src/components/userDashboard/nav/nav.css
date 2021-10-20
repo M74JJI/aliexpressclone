@@ -1,0 +1,20 @@
+.userNav-menu {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 300px;
+    width: 200px;
+}
+.userNav-menu h5 {
+    padding: 0.2rem 1rem;
+}
+.userNav-menu a {
+    padding: 0.2rem 1rem;
+    color: #333;
+}
+.selected-nav {
+    border-left: 3px solid #f60;
+    color: #f60;
+    background-color: #f2f2f2;
+}

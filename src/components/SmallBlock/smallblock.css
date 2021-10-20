@@ -1,0 +1,37 @@
+.smallblock {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.smallBlock-header {
+    font-size: 16px;
+    margin: 9px 0 11px;
+    height: 26px;
+    font-weight: 700;
+    line-height: 21px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    color: #000000;
+    padding: 0.3rem 1rem;
+}
+.smallBlock-cards_container {
+    display: flex;
+    padding: 0.5rem 1rem;
+    column-gap: 5px;
+    position: relative;
+}
+.smallBlock-cards_container img {
+    width: 80px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.smallblock:hover {
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.17);
+}
+.smallBlock-cards_container img:hover {
+    opacity: 0.9;
+}

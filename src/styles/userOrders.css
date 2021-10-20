@@ -1,0 +1,111 @@
+.userOrders {
+    background-color: #f2f2f2;
+}
+.userOrders-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 2rem;
+    display: flex;
+    column-gap: 2rem;
+    position: relative;
+    height: 100vh;
+}
+.userNav-menu {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 300px;
+    width: 200px;
+    position: sticky;
+    left: 0;
+}
+.userNav-menu h5 {
+    padding: 0.2rem 1rem;
+}
+.userNav-menu a {
+    padding: 0.2rem 1rem;
+    color: #333;
+}
+.selected-nav {
+    border-left: 3px solid #f60;
+    color: #f60;
+    background-color: #f2f2f2;
+}
+.thead {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+.btn-pdf {
+    background-image: linear-gradient(94deg, #ff0a0a, #ff7539);
+    padding: 0.6rem 2rem;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    position: absolute;
+    bottom: -0.2rem;
+}
+.userOrders-form {
+}
+.wishlis-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.Payment-Info {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.status-span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0.5rem 1rem;
+}
+.Payment-Info span:nth-child(1),
+.Payment-Info span:nth-child(4),
+.Payment-Info span:nth-child(7),
+.Payment-Info span:nth-child(10),
+.Payment-Info span:nth-child(13) {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.updatePassword-form {
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+.wishist-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000000;
+    height: 190px;
+    width: 150px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.wishist-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+}
+.wishist-card:hover {
+    opacity: 0.9;
+}
+.wishist-card span {
+    color: #000000;
+    font-weight: 600;
+}
+.wish-btn-remove {
+    padding: 0 0.5rem;
+    border-radius: 50%;
+    background-color: #ff0a0a;
+    color: #fff;
+    font-weight: 800;
+    z-index: 999;
+}

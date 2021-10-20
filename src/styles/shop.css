@@ -1,0 +1,133 @@
+.shop-container {
+    background-color: #f2f2f2;
+    height: 200vh;
+}
+
+.shop {
+    max-width: 1480px;
+    margin: 0 auto;
+    display: flex;
+}
+.shop-menu {
+    margin-top: 1rem;
+    background: #fff;
+    width: 240px;
+    padding: 16px 24px;
+    max-height: 85vh;
+    flex: 2 2;
+    height: 100vh;
+    -ms-flex-preferred-size: 0.000000001px;
+    flex-basis: 0.000000001px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: fixed;
+}
+.shop-products {
+    display: flex;
+    flex-direction: column;
+}
+.products-header {
+    margin-left: 240px;
+    max-height: 100px;
+    position: relative;
+}
+.product-list-container {
+    display: flex;
+    column-gap: 1rem;
+    flex-wrap: wrap;
+    background-color: #f2f2f2;
+    margin-left: 300px;
+    max-width: 1480px;
+}
+
+.related-categories-title {
+    font-weight: 700;
+    font-size: 15px;
+    color: #000;
+    letter-spacing: 0;
+    line-height: 18px;
+}
+.shop-menu ul {
+    padding-top: 5px;
+}
+.shop-menu li {
+    font-weight: lighter;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    color: #000;
+    text-transform: capitalize;
+    font-size: 13px;
+}
+.shop-menu li:hover {
+    color: #ff4747;
+    text-decoration: underline;
+}
+.products-header {
+    min-height: 110px;
+    padding: 16px 0 0;
+}
+
+.sort {
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-right: 0;
+    line-height: 30px;
+    padding: 1rem;
+}
+.sort-title {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+.sort-wrapper {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    line-height: 30px;
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 13px;
+    color: #666;
+    letter-spacing: 0;
+    width: 390px;
+}
+.sort-item {
+    cursor: pointer;
+    padding: 0 8px;
+}
+.active {
+    color: #ff4747;
+    font-weight: 700;
+}
+.slider {
+    width: 210px;
+}
+
+.sort-wrapper span {
+    border-right: 1px solid #e8e8e8;
+}
+.sort-wrapper span:last-child {
+    border: none;
+}
+.sort-span {
+    display: flex;
+    column-gap: 1rem;
+}
+.wide {
+    display: flex;
+    flex-direction: column;
+}
+.switch-view {
+    position: absolute;
+    right: 3rem;
+    bottom: 0;
+    font-size: 1.5rem;
+    color: #c7c2c2;
+    cursor: pointer;
+}
+.orange {
+    color: #ff4747;
+}

@@ -1,0 +1,14 @@
+.HeadBanner {
+    min-width: 720px;
+    height: 80px;
+    overflow: hidden;
+}
+.HeadBanner a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://ae01.alicdn.com/kf/Hb1cd78e8829c4cab966d27235e42ac4fF.jpg_Q90.jpg_.webp);
+    text-indent: -9999rem;
+    background-repeat: no-repeat;
+    background-position: top;
+}

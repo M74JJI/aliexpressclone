@@ -1,0 +1,36 @@
+.timer-containe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(270deg, #051817, #0e3839);
+    height: 50px;
+    width: 280px;
+    color: #06f1f6;
+    text-shadow: 1px 1px 7px;
+
+    border: 2px solid silver;
+}
+.clock section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock section p {
+    font-size: 1rem;
+}
+.clock section small {
+    color: silver;
+    text-shadow: none;
+    margin-top: -1rem;
+    padding: 0 0.1rem;
+}

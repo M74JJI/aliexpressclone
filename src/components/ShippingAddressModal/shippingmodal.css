@@ -1,0 +1,111 @@
+.shippingmodal {
+    background: #fff;
+    border: 1px solid #d8d8d8;
+    border-radius: 8px;
+    box-shadow: 0 2px 14px 0 rgba(220, 136, 136, 0.2);
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 500px;
+}
+.shippingmodal-title {
+    padding: 12px 24px 32px;
+    border-bottom: 0 solid transparent;
+    font-size: 24px;
+    background: transparent;
+    color: #000;
+    font-weight: 700;
+}
+.shippingmodal-contact-title {
+    width: 100%;
+    font-size: 14px;
+    color: #000;
+    font-weight: 700;
+    margin: 0 0 12px;
+    padding: 20px 30px 0;
+}
+.shippingmodal-contact {
+    display: flex;
+    column-gap: 1rem;
+    padding: 0 2rem;
+}
+.shippingmodal-contact input {
+    width: 50%;
+    border-radius: 4px;
+    height: 38px;
+    line-height: 38px \0;
+    padding: 0 12px;
+    font-size: 14px;
+    border: 0.3px solid #ff3000;
+    transition: all 0.2s ease-out;
+}
+.shippingmodal-contact input:focus {
+    border: 2px solid #e62e04;
+}
+.shippingmodal-city {
+}
+.shippingmodal-forinputs {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1rem;
+}
+
+.shippingmodal-forinputs select {
+    width: 25%;
+    height: 38px;
+    line-height: 38px \0;
+    padding: 0 12px;
+    font-size: 14px;
+    display: inline-table;
+    border-collapse: separate;
+
+    width: 200px;
+    border-spacing: 0;
+    transition: all 0.3s ease-out;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.shippingmodal-forinputs select option {
+    width: 100px;
+}
+.shippingmodal-forinputs input {
+    width: 25%;
+    height: 38px;
+    line-height: 38px \0;
+    padding: 0 12px;
+    font-size: 14px;
+    display: inline-table;
+    border-collapse: separate;
+
+    width: 200px;
+    border-spacing: 0;
+    transition: all 0.3s ease-out;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.address-btn {
+    border-style: solid;
+    background-color: #ff4747;
+    border-color: transparent;
+    color: #fff;
+    margin: 2rem;
+    border-radius: 4px;
+    padding: 0 48px;
+    height: 44px;
+    line-height: 42px;
+    font-size: 16px;
+    border-width: 1px;
+}
+.close-modal {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}

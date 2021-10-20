@@ -1,0 +1,29 @@
+.specifications-container {
+    width: 100%;
+    display: flex;
+}
+.specifications-left {
+    max-width: 50%;
+    flex: 6;
+    flex-direction: column;
+}
+.specifications-right {
+    flex: 6;
+}
+.specifications-property {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+}
+.specifications-propert-name {
+    color: #999;
+    font-size: 16px;
+}
+.specifications-propert-value {
+    cursor: pointer;
+    display: inline-block;
+    max-width: inherit;
+    font-size: 16px;
+    color: #151515;
+    vertical-align: bottom;
+}

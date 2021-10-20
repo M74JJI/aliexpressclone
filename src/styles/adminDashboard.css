@@ -1,0 +1,33 @@
+.page-header {
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+
+.cardChart {
+    padding: 30px;
+    margin-bottom: 30px;
+    background-color: var(--main-bg);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+.full-height {
+    height: 100%;
+}
+.cardChart.full-height {
+    height: calc(100% -30px);
+}
+.cardinho_header {
+    text-transform: capitalize;
+}
+
+.cardinho_header ~ .cardinho_body {
+    margin-top: 30px;
+}
+.cardinho__footer {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.cardinho > div ~ div {
+    margin-top: 30px;
+}

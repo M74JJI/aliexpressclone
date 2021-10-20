@@ -1,0 +1,393 @@
+.user-menu {
+    width: 240px;
+    height: 476px;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-size: 240px 101px;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    transform: translateY(-1rem);
+    background-image: url(https://ae01.alicdn.com/kf/He1ffbc1d340f4be8a0a6d07641c58180t.png_.webp);
+}
+.pp {
+    position: relative;
+    width: 210px;
+    height: 76px;
+}
+.pp-img {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.pp-img img {
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    position: absolute;
+    left: 39%;
+}
+.pp-text {
+    position: absolute;
+    top: 58px;
+    width: 100%;
+    height: 18px;
+    line-height: 18px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    cursor: pointer;
+}
+.user-buttons {
+    width: 210px;
+    height: 100px;
+}
+.user-buttons-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+}
+.user-buttons-container a {
+    display: inline-block;
+    width: 98px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 18px;
+    cursor: pointer;
+}
+.user-buttons-container a:first-child {
+    background-image: linear-gradient(94deg, #ff0a0a, #ff7539);
+    color: #fff;
+}
+.user-buttons-container a:last-child {
+    background-color: #f5f5f5;
+    color: #222;
+}
+.user-ad {
+    width: 210px;
+    height: 270px;
+}
+.user-ad-container {
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    background-color: #f5f5f5;
+    background-size: cover;
+    border-radius: 6px;
+    overflow: hidden;
+    background-image: url(https://ae01.alicdn.com/kf/H4d81c0b772ad404b9acc330f16c6165dO.png_.webp);
+}
+.user-text {
+    height: 98px;
+}
+.user-text1 {
+    padding-top: 10px;
+    line-height: 18px;
+    font-size: 13px;
+    color: #fff;
+    overflow: hidden;
+}
+.user-text2 {
+    padding-top: 10px;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+.user-cards {
+    width: 190px;
+    height: 102px;
+    padding-top: 70px;
+}
+.user-card-container {
+    width: 100%;
+    display: flex;
+}
+.user-cards .user-card-container a {
+    position: relative;
+    display: inline-block;
+    padding: 0 3px;
+    width: 98px;
+    height: 92px;
+    overflow: hidden;
+}
+.user-card1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+.user-card1 img {
+    width: 92px;
+    height: 92px;
+    border-radius: 4px;
+    width: 92px;
+    height: 92px;
+    border-radius: 4px;
+}
+.user-cardPrice {
+    display: flex;
+    position: absolute;
+    bottom: 4px;
+    width: 92px;
+    justify-content: center;
+}
+.user-cardPrice {
+    display: inline-block;
+    max-width: 92px;
+    height: 20px;
+    padding: 0 8px;
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    background-image: linear-gradient(94deg, #ff0a0a, #ff7539);
+    border-radius: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.logRegModal {
+    position: absolute;
+    width: 420px;
+    height: 480px;
+    border-radius: 10px;
+    border: 1px solid #d8d8d8;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 14px 0 rgb(220 136 136 / 20%);
+    z-index: 999999999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: all 1s;
+}
+.logRegModal-container {
+    position: relative;
+    padding-top: 32px;
+    background: #fff;
+    overflow: hidden;
+}
+.logReg-logo {
+    background: url(//ae01.alicdn.com/kf/H499c11b7e0094a2294b33e4af09ebea34.png)
+        no-repeat;
+    background-size: cover;
+    width: 125px;
+    height: 31px;
+    margin: 0 auto 5px;
+}
+.logRegModal-container ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    height: 34px;
+    position: relative;
+}
+
+.logRegModal-container ul li {
+    position: relative;
+    width: 100px;
+    display: inline-block;
+    padding: 10px 0 5px;
+    margin: 0 15px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    list-style: none;
+    cursor: pointer;
+}
+
+.selectedLine1 {
+    content: '';
+    position: absolute;
+    left: 22%;
+    bottom: 0;
+    width: 0;
+    border-bottom: 2px solid #ff4747;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.selectedLine2 {
+    content: '';
+    position: absolute;
+    right: 22%;
+    bottom: 0;
+    width: 0;
+    border-bottom: 2px solid #ff4747;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.logReg-form form {
+    padding: 2rem 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.logReg-form form input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 0 16px 0 10px;
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    outline: 0;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+}
+.logReg-form form input:focus {
+    border-color: #333;
+}
+.logReg-form form button {
+    margin-top: 30px;
+    width: 100%;
+    height: 44px;
+    background: #ff4747;
+    border: 0;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 44px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0;
+    font-family: Open Sans;
+    font-weight: 600;
+    outline: 0;
+    cursor: pointer;
+}
+.logReg-form a {
+    font-size: 12px;
+    color: #2e9cc3;
+    text-decoration: none;
+    transform: translateY(-5px);
+}
+.logReg-quick {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateY(-14px);
+    padding-bottom: 1rem;
+}
+.google {
+    width: 54px;
+    height: 54px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png);
+}
+.w100 {
+    width: 100px;
+}
+.closeLogReg {
+    float: right;
+    padding-right: 1rem;
+    font-size: 1.1rem;
+    color: rgb(139, 131, 131);
+    cursor: pointer;
+    animation: all 0.2s;
+}
+
+.closeLogReg:hover {
+    color: #333;
+}
+.benifits span:first-child {
+    display: inline-block;
+    width: 20px;
+    height: 12px;
+    background: url(//ae01.alicdn.com/kf/H6d1b17af1f8a41f9a6ec5048e65084c6k.png)
+        no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.benifits span:last-child {
+    font-size: 12px;
+    color: #ff4747;
+    margin-left: 4px;
+    line-height: 18px;
+    vertical-align: middle;
+}
+
+.logReg-quick {
+    margin: 8px 0;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #999;
+}
+.logReg-quickText {
+    margin-bottom: 20px;
+    height: 22px;
+    text-align: center;
+    font-size: 16px;
+    color: #999;
+    padding-top: 10px;
+}
+
+/*----------------*/
+.user-list {
+    width: 210px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 1rem;
+    padding-top: 15px;
+}
+.user-list a .user-acc1-1 {
+    background-image: url(//ae01.alicdn.com/kf/H70a4210816984d96888ee44ddf0f1d00S.png);
+    position: relative;
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin: 0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+}
+.user-list a .user-acc1-2,
+.user-list a .user-acc2-2,
+.user-list a .user-acc3-2 {
+    width: 100%;
+    max-height: 26px;
+    line-height: 13px;
+    font-size: 12px;
+    color: #222;
+    text-align: center;
+    margin-left: 5px;
+}
+.user-list a .user-acc2-1 {
+    background-image: url(//ae01.alicdn.com/kf/Hea665888ef3c45e28bf09a2e06ad64e1G.png);
+    position: relative;
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin: 0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+}
+
+.user-list a .user-acc3-1 {
+    background-image: url(https://res.cloudinary.com/dfwn8qh1d/image/upload/v1633818446/wishlist_icon-1320165997565269065_qqoray.png);
+    position: relative;
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin: 0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+}

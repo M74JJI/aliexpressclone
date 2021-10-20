@@ -1,0 +1,181 @@
+.header {
+    position: relative;
+    height: 96px;
+    width: 100%;
+    background-color: #fff;
+    z-index: 20;
+    border-bottom: 1px solid #e9e9e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-container {
+    position: relative;
+    width: 1200px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-left {
+    position: relative;
+    width: 256px;
+    float: left;
+    z-index: 11;
+    padding-right: 16px;
+}
+.header-logo {
+    float: left;
+    padding: 0 0 0;
+    max-width: 182px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.header-logo img {
+    width: 100%;
+}
+.header-logo .logo {
+    display: block;
+    width: 166px;
+    height: 40px;
+    text-indent: -999em;
+    margin: 0 auto;
+    overflow: hidden;
+    background-image: url(https://ae01.alicdn.com/kf/H1674ac74299a489f8e2995c8b73006ceJ.png);
+    background-repeat: no-repeat;
+    margin-left: 17px;
+}
+.header-logo .slogan {
+    margin-top: 3px;
+    display: block;
+    height: 15px;
+    line-height: 12px;
+    overflow: hidden;
+    font-size: 11px;
+    color: #999;
+    margin-right: -18px;
+    letter-spacing: 0.3px;
+}
+.header-middle {
+    position: relative;
+    width: 100%;
+    padding-top: 23px;
+}
+.header-right {
+    position: absolute;
+    right: 10%;
+    top: 25%;
+}
+.search {
+    width: 90%;
+    position: relative;
+    display: flex;
+    height: 36px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.2rem;
+}
+
+.searchTerm {
+    width: 80%;
+    border: 2px solid #ff4747;
+    border-right: none;
+    padding: 5px;
+    height: 36px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9dbfaf;
+}
+
+.searchTerm:focus {
+    color: #ff4747;
+    border-color: #ff4747;
+}
+
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #ff4747;
+    background: #ff4747;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+    background-image: url(//ae01.alicdn.com/kf/Hef9c4bcb621f4b1ebc69160e597897edU.png);
+    background-position: 0 -1321px;
+    background-repeat: no-repeat;
+}
+.searchButton img {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+.right-cart-icon {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    background-image: url(https://ae01.alicdn.com/kf/Hef9c4bcb621f4b1ebc69160e597897edU.png);
+    background-position: 0 -2895px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.header-right span {
+    background: #ff4747;
+    max-width: 25px;
+    min-width: 20px;
+    height: 20px;
+    color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: -5px;
+    left: 22px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    padding: 0 2px;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    height: 60px;
+}
+.fixed-container {
+    margin-top: 10px;
+}
+.fixed-logo {
+    background-image: url(//ae01.alicdn.com/kf/He14c7c1dc7d84a1fa9a60aba6156278dq.png);
+    background-repeat: no-repeat;
+    display: block;
+    transform: translateY(10px);
+    width: 166px;
+    height: 40px;
+    text-indent: -999em;
+}
+.category-fixed {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 150px;
+    width: 46px;
+    height: 40px;
+    overflow: hidden;
+    background: url(//ae01.alicdn.com/kf/Hee223875f9f74af385b2e302dfc0e4bbM.png)
+        no-repeat -500px -50px;
+}
+.category-fixed:hover {
+    opacity: 0.8;
+}
+.category-hovered {
+    position: absolute;
+    top: 73%;
+    right: 0;
+    width: 250px;
+    visibility: hidden;
+    opacity: 0;
+}
+.hovered:hover .category-hovered {
+    visibility: visible;
+    opacity: 1;
+}

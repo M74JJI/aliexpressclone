@@ -1,0 +1,43 @@
+.create-store-container {
+    background-color: #f9f9f9;
+    height: 100vh;
+}
+.create-store {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+.createStore-form {
+    width: 600px;
+    height: 700px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.17);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.create-store-item {
+    width: 100%;
+    display: flex;
+}
+.create-store-item label {
+    width: 100px;
+}
+.create-store-item input {
+    border: 1px solid grey;
+    height: 30px;
+    width: 300px;
+    border-radius: 2px;
+    padding: 0 1rem;
+}
+.create-store-item textarea {
+    width: 300px;
+    height: 60px;
+    padding: 0.1rem 1rem;
+}

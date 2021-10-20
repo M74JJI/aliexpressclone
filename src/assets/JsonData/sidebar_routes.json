@@ -1,0 +1,53 @@
+[
+    {
+        "display_name": "Dashboard",
+        "route": "/admin/dashboard",
+        "icon": "bx bx-category-alt"
+    },
+    {
+        "display_name": "Users",
+        "route": "/admin/users",
+        "icon": "bx bx-user-pin"
+    },
+    {
+        "display_name": "Products",
+        "route": "/admin/products",
+        "icon": "bx bx-package"
+    },
+    {
+        "display_name": "Create Product",
+        "route": "/admin/product",
+        "icon": "bx bx-package"
+    },
+    {
+        "display_name": "Orders",
+        "route": "/admin/orders",
+        "icon": "bx bx-cart"
+    },
+    {
+        "display_name": "Sellers Applications",
+        "route": "/admin/sellersApps",
+        "icon": "bx bx-list-ol"
+    },
+    {
+        "display_name": "Categories",
+        "route": "/admin/category",
+        "icon": "bx bx-bar-chart-alt"
+    },
+    {
+        "display_name": "sub Categories",
+        "route": "/admin/sub",
+        "icon": "bx bx-list-ol"
+    },
+    {
+        "display_name": "Coupons",
+        "route": "/admin/coupon",
+        "icon": "bx bx-gift"
+    },
+
+    {
+        "display_name": "settings",
+        "route": "/user/password",
+        "icon": "bx bx-cog"
+    }
+]

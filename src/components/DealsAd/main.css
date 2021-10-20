@@ -1,0 +1,89 @@
+.DealsAd {
+    background-color: #ed3835;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.DealsAd img {
+    width: 100%;
+}
+.DealsAd span {
+    display: inline-block;
+    width: 100%;
+    font-weight: 600;
+    text-align: center;
+    font-size: 36px;
+    color: #fff;
+    outline: none;
+    position: absolute;
+    top: 53%;
+}
+.AdCard {
+    background-color: rgb(255, 175, 0);
+    display: inline-block;
+    position: absolute;
+    top: 25%;
+    left: 11%;
+    border-radius: 24px;
+
+    width: 140px;
+    height: 181px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+.DealsAd .AdCard span,
+.DealsAd .AdCard2 span {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 2.1rem;
+}
+.AdCard2 {
+    background-color: rgb(255, 175, 0);
+    display: inline-block;
+    position: absolute;
+    top: 25%;
+    right: 11%;
+    border-radius: 24px;
+    width: 140px;
+    height: 181px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+.AdCard img,
+.AdCard2 img {
+    width: 80%;
+    height: 70%;
+    border-radius: 24px;
+    margin-top: -3px;
+}
+
+.AdCard img:hover,
+.AdCard2 img:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+.DealsAd-Banner {
+    display: flex;
+    column-gap: 5px;
+    width: 500px;
+    position: absolute;
+    top: 3%;
+    left: 34%;
+}
+.DealsAd-Banner .DealsAd-Card {
+    background-color: blue;
+    width: 130px;
+    height: 140px;
+    border-radius: 10px;
+}
+.DealsAd-Banner .DealsAd-Card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.DealsAd-Banner .DealsAd-Card img:hover {
+    opacity: 0.9;
+}

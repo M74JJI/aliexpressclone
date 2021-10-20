@@ -1,0 +1,126 @@
+.home-dealsAd {
+    background-color: #ed383509;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+.home-container {
+    background-color: #ed383509;
+}
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 1rem;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 240px 2.3fr 240px;
+    grid-template-rows: 250px 239px;
+}
+.category-main {
+    grid-row: 1/3;
+}
+.user-main {
+    margin-top: 2.5rem;
+    grid-row: 1/3;
+    grid-column: 3/4;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-top: 1rem;
+}
+.carousel-main {
+    margin-top: 2.5rem;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    position: relative;
+}
+.featured-main {
+    margin-top: 3rem;
+}
+
+.coupon {
+    position: absolute;
+    bottom: 40%;
+}
+.coupon img {
+    width: 190px;
+    padding-left: 5px;
+}
+.coupon span {
+    width: 150px;
+    transform: translateY(50px);
+    padding-left: 1rem;
+}
+/*---*/
+.categories-container {
+    height: 170px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+}
+/*-----------*/
+
+@media (max-width: 1100px) {
+    .user-main {
+        display: none;
+    }
+
+    .main {
+        grid-template-columns: 1fr 3fr;
+        margin: 0 auto;
+    }
+}
+.topRanking-container {
+    background-color: #e3e3e3;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding-bottom: 2rem;
+}
+.home__products-wrap {
+    background-color: #e3e3e3;
+    padding-top: 2rem;
+}
+.home-products {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+}
+.show-more-container {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+    background-color: #e3e3e3;
+}
+.showmore-btn {
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    background-image: linear-gradient(94deg, #ff0a0a, #ff7539);
+    border-radius: 20px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+.goToStore {
+    position: absolute;
+    z-index: 999;
+    top: -2.6rem;
+    left: 1rem;
+    display: inline-block;
+    width: 98px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    background-image: linear-gradient(94deg, #ff0a0a, #ff7539);
+    color: #fff;
+}

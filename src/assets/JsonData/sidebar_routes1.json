@@ -1,0 +1,24 @@
+[
+    {
+        "display_name": "Dashboard",
+        "route": "/admin/dashboard",
+        "icon": "bx bx-category-alt"
+    },
+
+    {
+        "display_name": "Products",
+        "route": "/admin/products",
+        "icon": "bx bx-package"
+    },
+    {
+        "display_name": "Create Product",
+        "route": "/admin/product",
+        "icon": "bx bx-package"
+    },
+
+    {
+        "display_name": "settings",
+        "route": "/user/password",
+        "icon": "bx bx-cog"
+    }
+]

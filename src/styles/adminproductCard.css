@@ -1,0 +1,23 @@
+.adminCard {
+    width: 200px;
+    height: 250px;
+    margin-right: 20px;
+}
+.adminCard > img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+.adminCard__infos {
+    display: flex;
+    flex-direction: column;
+}
+
+.adminCardIocns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.adminCard:hover {
+    color: var(--txt-white);
+}

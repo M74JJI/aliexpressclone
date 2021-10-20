@@ -1,0 +1,186 @@
+.sideline {
+    width: 40px;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding-top: 120px;
+    background-color: #373737;
+    font-size: 13px;
+    z-index: 99999999999999999999999;
+    animation: sideline-transformation;
+    animation-duration: 1s;
+    transform: translateX(40px);
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+.sidelineMiddle {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.sidelineMiddle .sideline-gift {
+    background: url(//ae01.alicdn.com/kf/H5f255824649b43a18f99805bab6970cdG.png)
+        no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    width: 35px;
+    height: 35px;
+    transition: all 0.1s ease;
+}
+.sidelineMiddle .sideline-gift:hover {
+    background-image: url(//ae01.alicdn.com/kf/H1c50dfb1f16c4d3382add1b9dffcea35Y.png);
+}
+.sideline-img {
+}
+.sideline-img img {
+    margin-top: 1rem;
+    width: 25px;
+    height: 25px;
+}
+.sideline-img img:hover {
+    background-color: #ff4747;
+    animation: imgrotate;
+    animation-duration: 1s;
+}
+
+@keyframes imgrotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes sideline-transformation {
+    from {
+        transform: translateX(40px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+.sideline-svg {
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+.sidePoppup {
+    position: absolute;
+    left: -147px;
+    top: 10px;
+    background-color: #373737;
+    color: #fff;
+    padding: 0.8rem 1rem;
+    border-radius: 6px;
+    display: none;
+    transition: all 0.5s ease;
+}
+.sidePoppupSocial {
+    position: absolute;
+    left: -147px;
+    top: 10px;
+    background-color: #373737;
+    color: #fff;
+    padding: 0.8rem 1rem;
+    border-radius: 6px;
+    display: none;
+    transition: all 0.5s ease;
+}
+.sideline-gift {
+    position: relative;
+}
+.arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 12px solid #373737;
+    position: absolute;
+    left: -18px;
+    top: 52%;
+    display: none;
+    transition: all 0.5s ease;
+}
+
+.sideline-gift:hover .arrow-right,
+.sideline-gift:hover .sidePoppup {
+    display: block;
+}
+.sideline-img:hover .arrow-right2,
+.sideline-img:hover .sidePoppupSocial {
+    display: block;
+}
+.sidePoppup1 {
+    position: absolute;
+    left: -105px;
+    top: 0px;
+    background-color: #373737;
+    color: #fff;
+    padding: 0.8rem 1rem;
+    border-radius: 6px;
+    display: none;
+    transition: all 0.5s ease;
+}
+.sidePoppupSocial {
+    position: absolute;
+    left: -75px;
+    top: -200px;
+    display: flex;
+    flex-direction: column;
+    background-color: #373737;
+    color: #fff;
+    padding: 0.8rem 1rem;
+    border-radius: 6px;
+    display: none;
+    transition: all 0.5s ease;
+}
+
+.arrow-right1 {
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 12px solid #373737;
+    position: absolute;
+    left: -18px;
+    top: 52%;
+    display: none;
+    transition: all 0.5s ease;
+}
+.arrow-right2 {
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 12px solid #373737;
+    position: absolute;
+    left: -15px;
+    top: 52%;
+    display: none;
+    transition: all 0.5s ease;
+}
+.sideline-img {
+    height: 35px;
+    margin-top: 5px;
+}
+
+.sideline-img:hover .arrow-right1,
+.sideline-img:hover .sidePoppup1 {
+    display: block;
+}
+.sideLineBottom {
+    position: absolute;
+    top: 85%;
+    text-align: center;
+    margin-left: 5px;
+}

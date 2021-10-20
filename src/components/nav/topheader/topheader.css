@@ -1,0 +1,196 @@
+.topheader {
+    position: relative;
+    height: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid #f2f2f2;
+    background-color: #fafafa;
+    z-index: 22;
+    font-size: 12px;
+}
+.topheader-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.topheader-nav {
+}
+
+.topheader-nav .topheader-navItem {
+    position: relative;
+    float: left;
+    height: 39px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+}
+.topheader-nav .topheader-navItem span {
+    position: relative;
+    display: block;
+    padding: 0 24px 0 10px;
+    color: #333;
+    cursor: pointer;
+    line-height: 39px;
+    font-size: 12px;
+}
+.topheader-nav .topheader-navItem span:hover {
+    color: #ff4747;
+}
+.topheader-nav .topheader-navItem:nth-child(1):hover,
+.topheader-nav .topheader-navItem:nth-child(2):hover {
+    border: 1px solid beige;
+    background-color: #fff;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+}
+.topheader-nav .topheader-navItem ul {
+    list-style: none;
+    position: absolute;
+    width: 180px;
+    display: none;
+    border: 1px solid beige;
+    top: 33px;
+    left: -1px;
+    background-color: #fff;
+    z-index: 2;
+    border-top: none;
+}
+.topheader-navItem ul li {
+    margin-left: 0;
+    padding: 0 24px 0 10px;
+    list-style: none;
+}
+.topheader-navItem:hover ul {
+    display: block;
+}
+.topheader-navItem ul li a {
+    display: block;
+    padding: 0 10px;
+    line-height: 35px;
+    height: 35px;
+    white-space: nowrap;
+    color: #333;
+}
+.topheader-navItem ul li a:hover {
+    color: rgba(51, 51, 51, 0.419);
+}
+.topheader-navItem li:hover {
+    background-color: #fafafa;
+}
+.topheader-navItem:first-child::after {
+    content: '';
+    position: absolute;
+    top: 11px;
+    right: -4px;
+    width: 1px;
+    height: 16px;
+    overflow: hidden;
+    border-right: 1px solid #ccc;
+}
+.topheader-navItem:nth-child(4)::after {
+    content: '';
+    position: absolute;
+    top: 11px;
+    right: -8px;
+    width: 1px;
+    height: 16px;
+    overflow: hidden;
+    border-right: 1px solid #ccc;
+}
+.topheader-navItem:nth-child(5)::after {
+    content: '';
+    position: absolute;
+    top: 11px;
+    right: -1px;
+    width: 1px;
+    height: 16px;
+    overflow: hidden;
+    border-right: 1px solid #ccc;
+}
+.topheader-navItem:nth-child(6)::after {
+    content: '';
+    position: absolute;
+    top: 11px;
+    right: -9px;
+    width: 1px;
+    height: 16px;
+    overflow: hidden;
+    border-right: 1px solid #ccc;
+}
+.topheader-navItem:nth-child(4) {
+    margin-left: 25px;
+}
+.topheader-navItem:nth-child(5) {
+    margin-left: 15px;
+}
+.topheader-navItem:nth-child(6) {
+    margin-left: 15px;
+}
+.topheader-navItem:nth-child(7) {
+    margin-left: 15px;
+}
+
+.topheader-navItem .icon {
+    position: absolute;
+    font-size: 1rem;
+    color: #333;
+    right: 0;
+    margin-right: 6px;
+}
+.topheader-navItem::after {
+    content: ' ';
+    display: table;
+}
+.topheader-navItem:hover .icon {
+    visibility: hidden;
+}
+.topheader-navItem:hover .icon1 {
+    visibility: visible;
+    opacity: 1;
+}
+.topheader-navItem .icon1 {
+    visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.topheader-navItem a {
+    color: #333;
+}
+.topheader-navItem a:hover {
+    color: #ff4747;
+}
+
+.ng-icon-size {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.ng-wishlist-icon {
+    background-image: url(https://ae01.alicdn.com/kf/Hef9c4bcb621f4b1ebc69160e597897edU.png);
+    background-position: 0 -1377px;
+    background-repeat: no-repeat;
+}
+.ng-account-icon {
+    background-image: url(https://ae01.alicdn.com/kf/Hef9c4bcb621f4b1ebc69160e597897edU.png);
+    background-position: 0 -851px;
+    background-repeat: no-repeat;
+}
+
+.app a::before {
+    background-image: url(https://ae01.alicdn.com/kf/Hef9c4bcb621f4b1ebc69160e597897edU.png);
+    background-position: 0 -923px;
+    background-repeat: no-repeat;
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: -17px;
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+}
+.wishAcc:hover {
+    color: #ff4747;
+}

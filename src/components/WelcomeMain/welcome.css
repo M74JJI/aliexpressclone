@@ -1,0 +1,9 @@
+.welcome {
+    position: relative;
+    width: 100%;
+    padding-left: 240px;
+    margin-top: 16px;
+}
+.welcomeheader {
+    height: 40px;
+}
