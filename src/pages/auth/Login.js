@@ -142,7 +142,10 @@ const Login = ({ history }) => {
     return (
         <div className="logRegModal">
             <div className="logRegModal-container">
-                <div className="logReg-logo"></div>
+                <a href="/">
+                    {' '}
+                    <div className="logReg-logo"></div>
+                </a>
                 <ul>
                     <li onClick={handleShowSignUp}>Register</li>
                     <div

@@ -133,7 +133,7 @@ const Cart = ({ history }) => {
                                                     </div>
                                                     <div className="cart-product-color">
                                                         <span>Color : </span>
-                                                        <span>red</span>
+                                                        <span>{p.color}</span>
                                                     </div>
                                                     <p>
                                                         {p.title.substring(

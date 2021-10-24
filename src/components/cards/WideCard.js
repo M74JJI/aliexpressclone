@@ -5,9 +5,9 @@ import { showAverage } from '../../functions/rating';
 function WideCard({ product }) {
     return (
         <div className="wideCard">
-            <Link>
+            <a href={`/product/${product.slug}`}>
                 <img src={product.images[0].url} alt="" />
-            </Link>
+            </a>
             <div className="wideCard-infos">
                 <Link className="wideCard-title">{product.title}</Link>
                 <span>{product.sold} sold</span>

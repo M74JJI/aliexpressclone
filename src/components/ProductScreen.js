@@ -368,58 +368,72 @@ function ProductScreen({
                                 product.colors.map((color) =>
                                     color === 'blue' ? (
                                         <button
+                                            onClick={() => setColor(color)}
                                             style={{ background: '#6495ED' }}
                                         ></button>
                                     ) : color === 'white' ? (
                                         <button
+                                            onClick={() => setColor(color)}
                                             style={{ background: 'white' }}
                                         ></button>
                                     ) : color === 'orange' ? (
                                         <button
+                                            onClick={() => setColor(color)}
                                             style={{ background: '#FFA500' }}
                                         ></button>
                                     ) : color === 'black' ? (
                                         <button
+                                            onClick={() => setColor(color)}
                                             style={{ background: 'black' }}
                                         ></button>
                                     ) : color === 'green' ? (
                                         <button
+                                            onClick={() => setColor(color)}
                                             style={{ background: '#9ACD32' }}
                                         ></button>
                                     ) : color === 'silver' ? (
                                         <button
+                                            onClick={() => setColor(color)}
                                             style={{ background: 'silver' }}
                                         ></button>
                                     ) : color === 'gray' ? (
                                         <span
+                                            onClick={() => setColor(color)}
                                             style={{ background: 'gray' }}
                                         ></span>
                                     ) : color === 'brown' ? (
                                         <span
+                                            onClick={() => setColor(color)}
                                             style={{ background: 'brown' }}
                                         ></span>
                                     ) : color === 'red' ? (
                                         <span
+                                            onClick={() => setColor(color)}
                                             style={{ background: 'red' }}
                                         ></span>
                                     ) : color === 'purple' ? (
                                         <span
+                                            onClick={() => setColor(color)}
                                             style={{ background: 'purple' }}
                                         ></span>
                                     ) : color === 'aqua' ? (
                                         <span
+                                            onClick={() => setColor(color)}
                                             style={{ background: 'aqua' }}
                                         ></span>
                                     ) : color === 'yellow' ? (
                                         <span
+                                            onClick={() => setColor(color)}
                                             style={{ background: 'yellow' }}
                                         ></span>
                                     ) : color === 'pink' ? (
                                         <span
+                                            onClick={() => setColor(color)}
                                             style={{ background: 'pink' }}
                                         ></span>
                                     ) : color === 'violet' ? (
                                         <span
+                                            onClick={() => setColor(color)}
                                             style={{ background: '#EE82EE' }}
                                         ></span>
                                     ) : (
@@ -427,7 +441,9 @@ function ProductScreen({
                                     )
                                 )}
                         </div>
-                        <div className="color__name">Color:{color}</div>
+                        <div className="color__name">
+                            {color != '' && `color : ${color}`}
+                        </div>
                         <div className="product-qty">
                             Quantity :
                             <button
@@ -540,7 +556,7 @@ function ProductScreen({
                         <div className="related-title">Recommended For You</div>
 
                         {related &&
-                            related.map((r) => (
+                            related.slice(0, 3).map((r) => (
                                 <div className="related-product" key={r._id}>
                                     <a href={`/product/${r.slug}`}>
                                         <img src={r.images[1].url} alt="" />
@@ -562,25 +578,19 @@ function ProductScreen({
                             <div className="productScreen-seltitle">
                                 Top Selling
                             </div>
-                            {topSellingByCategory.map((s) => (
-                                <Link>
-                                    <div className="top-selling-card">
-                                        <img src={s.images[0].url} alt="" />
-                                        <span className="top-selling-price">
-                                            US ${s.price}
-                                        </span>
-                                        <div className="top-selling-bottom">
-                                            <div>
-                                                <AiTwotoneStar className="top-selling-star" />
-                                                <span>4.1</span>
-                                            </div>
-                                            <div className="top-selling-sold">
-                                                {s.sold} sold
-                                            </div>
-                                        </div>
+
+                            {related &&
+                                related.slice(0, 15).map((r) => (
+                                    <div
+                                        className="related-product"
+                                        key={r._id}
+                                    >
+                                        <a href={`/product/${r.slug}`}>
+                                            <img src={r.images[1].url} alt="" />
+                                        </a>
+                                        <span> US ${r.price}</span>
                                     </div>
-                                </Link>
-                            ))}
+                                ))}
                         </div>
                     </div>
                     <div className="productScreen-details-right">
@@ -650,27 +660,11 @@ function ProductScreen({
                                             follow
                                         </Link>
                                     )}
-                                    {user && user.token ? (
-                                        product.store && (
-                                            <a
-                                                href={`/store/${product.store._id}`}
-                                            >
-                                                {' '}
-                                                <button>Visit Store</button>
-                                            </a>
-                                        )
-                                    ) : (
-                                        <Link
-                                            className="link__a7a"
-                                            to={{
-                                                pathname: '/login',
-                                                state: {
-                                                    from: locationn.pathname,
-                                                },
-                                            }}
-                                        >
-                                            Visit Store
-                                        </Link>
+                                    {product.store && (
+                                        <a href={`/store/${product.store._id}`}>
+                                            {' '}
+                                            <button>Visit Store</button>
+                                        </a>
                                     )}
                                 </div>
                             </div>
@@ -680,10 +674,12 @@ function ProductScreen({
                                         .slice(min_Store, max_Store)
                                         .map((x) => (
                                             <div className="store-screen-card">
-                                                <img
-                                                    src={x.images[0].url}
-                                                    alt=""
-                                                />
+                                                <Link to={`/product/${x.slug}`}>
+                                                    <img
+                                                        src={x.images[0].url}
+                                                        alt=""
+                                                    />
+                                                </Link>
 
                                                 <span>US ${x.price}</span>
                                             </div>
@@ -759,7 +755,7 @@ function ProductScreen({
                             </div>
                         </div>
                         <div className="full-related-products">
-                            {related.slice(0, 50).map((r) => (
+                            {related.map((r) => (
                                 <div className="related-product full">
                                     <a href={`/product/${r.slug}`}>
                                         <img src={r.images[0].url} alt="" />

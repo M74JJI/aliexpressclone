@@ -52,7 +52,7 @@ function Product({ match, history }) {
         getProduct(slug).then((res) => {
             setProduct(res.data);
             setStoreId(res.data.store._id);
-            getRelated(res.data._id, 1).then((res) => setRelated(res.data));
+            getRelated(res.data._id).then((res) => setRelated(res.data));
         });
     };
     const getStoreProducst = async () => {

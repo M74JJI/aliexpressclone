@@ -21,7 +21,7 @@ const Payment = () => {
             setTotal(res.data.cartTotal);
             setAddress(res.data.orderdBy.address);
         });
-    });
+    }, []);
     return (
         <main className="main">
             <header className="payment-header">

@@ -73,7 +73,10 @@ const RegisterComplete = ({ history }) => {
     return (
         <div className="logRegModal">
             <div className="logRegModal-container">
-                <div className="logReg-logo"></div>
+                <a href="/">
+                    {' '}
+                    <div className="logReg-logo"></div>
+                </a>
                 <ul>
                     <li style={{ marginRight: '5rem' }}>Rest your password</li>
                 </ul>

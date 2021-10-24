@@ -72,7 +72,9 @@ const ProductCard = ({ product }) => {
                     )}
                 </div>
                 <div className="product-sold">{product.sold} sold</div>
-                <div className="product-shipping">Free Shipping</div>
+                {product.shipping == 'Yes' && (
+                    <div className="product-shipping">Free Shipping</div>
+                )}
             </div>
         </div>
     );
