@@ -206,13 +206,9 @@ function ProductScreen({
                 type: 'ADD_TO_CART',
                 payload: unique,
             });
-           // setTooltip('Added');
+            // setTooltip('Added');
             setQty(1);
             //show sideDrawer
-            dispatch({
-                type: 'SET_VISIBLE',
-                payload: true,
-            });
         }
         // show tooltip
     };
